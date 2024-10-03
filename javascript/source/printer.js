@@ -8,4 +8,14 @@ let hour = parseInt(currentTime[0]);
 let min = parseInt(currentTime[1]);
 let cookTime = parseInt(input[1]);
 
-console.log(hour, min, cookTime);
+// console.log(hour, min, cookTime);
+min += cookTime;
+
+hour += parseInt(min/60);
+min %= 60;
+
+if (hour >= 24){
+  hour %= 24;
+}
+
+console.log(hour + " " + min);
