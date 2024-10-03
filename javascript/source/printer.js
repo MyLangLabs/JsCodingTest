@@ -3,4 +3,8 @@ let inputPath = path.join(__dirname, '/dev/stdin'); // __dirname은 현재 스�
 let input = require('fs').readFileSync(inputPath).toString().trim().split('\r\n');
 //let input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');  //백준 제출
 
-console.log('Hello, World!');
+console.log(`|\\_/|`);
+console.log(`|q p|   /}`);
+console.log(`( 0 )"""\\`);
+console.log('|"^"`    |');
+console.log(`||_/=\\\\__|`);
