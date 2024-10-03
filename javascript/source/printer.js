@@ -6,11 +6,15 @@ let input = require('fs').readFileSync(inputPath).toString().trim().split(' ');
 let hour = parseInt(input[0]);
 let min = parseInt(input[1]);
 
-if(min<45){
-  hour--;
-  min += 15;
-}else{
-  min -= 45;
-}
+  if(min<45){
+    if(hour === 0){
+      hour = 23;
+    }else{
+      hour--;
+    }
+    min += 15;
+  }else{
+    min -= 45;
+  }
 
 console.log(hour + " " + min);
